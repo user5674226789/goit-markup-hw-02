@@ -1,44 +1,135 @@
 body {
   font-family: "Roboto", sans-serif; 
-  color: #434455;
   background-color: #FFFFFF;
+  color: #434455;
+  font-size: 18px;
 }
 
-.section1{
-  background-color:#2e2f42;
+ul {
+  list-style-type: none;
 }
 
-.title{
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0,02em;
-  color: #ffffff;
-}
-.button {
-  background-color: #4D5AE5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
+.nav-link {
+  text-decoration: none;
 }
 
-.title2 {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
+.list {
+  list-style-type: none;
+}
+
+.logotype-span {
 color: #2e2f42;
 }
 
-.text {
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03cm;
+  text-transform: uppercase;
+  color: #4D5AE5;
+}
+
+.menu-link {
+  font-size: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  text-align: left;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+   color: #404bbf;
+}
+
+.menu_contact {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   color: #434455;
 }
+
+.menu-contact:hover,
+.menu-contact:focus {
+  color: #404bbf;
+}
+
+.address {
+  font-style: normal;
+}
+
+ /* HERO SECTION */
+
+ .section {
+  background-color: #2e2f42;
+ }
+
+ .page-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+  }
+
+  .button {
+    cursor: pointer;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
+  .button:hover,
+  .button:focus {
+   background-color: #404bbf;
+  }
+  
+  .subtitle {
+      font-family: "Roboto", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
+      text-align: center;
+  }
+
+  .list-title {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+  }
+
+  .list-text {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+  }
+
+
+
+
+
+
+
 
 

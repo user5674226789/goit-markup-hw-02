@@ -27,7 +27,7 @@ color: #2e2f42;
   font-style: normal;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.03cm;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
 }
@@ -37,7 +37,7 @@ color: #2e2f42;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02cm;
   text-align: left;
   color: #2e2f42;
   text-decoration: none;
@@ -65,6 +65,18 @@ color: #2e2f42;
   font-style: normal;
 }
 
+.contact-information {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+
+.contact-information:hover,
+.contact-information:focus {
+  color: #404bbf;
+}
+
  /* HERO SECTION */
 
  .section {
@@ -77,7 +89,9 @@ color: #2e2f42;
   font-style: normal;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 1.12px;
+  line-height: 1.07;
+  color: #ffffff;
+  text-align: center;
   }
 
   .button {
@@ -102,9 +116,10 @@ color: #2e2f42;
       font-style: normal;
       font-weight: 700;
       line-height: 40px;
-      letter-spacing: 0.72px;
+      line-height: 0.72px ;
       text-transform: capitalize;
       text-align: center;
+      color: #2e2f42;
   }
 
   .list-title {
@@ -124,7 +139,16 @@ color: #2e2f42;
       line-height: 24px;
       letter-spacing: 0.32px;
   }
+  
+  .page-footer {
+    background-color: #2e2f42;
 
+  }
+
+  .logotype-text {
+    letter-spacing: 0.02;
+    line-height: 24px;
+  }
 
 
 

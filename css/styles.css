@@ -40,6 +40,8 @@ img {
   border-bottom: 1px solid #e7e9fc;
   padding-bottom: 24px;
   padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -139,6 +141,7 @@ img {
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px
 }
 
 .button {

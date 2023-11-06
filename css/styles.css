@@ -167,6 +167,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  border-radius: 4px;
 }
 
 .button:hover,

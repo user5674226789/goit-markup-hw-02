@@ -34,6 +34,7 @@ img {
   margin-right: auto;
   padding: 16px;
   padding-right: 16px;
+  display: flex;
 }
 
 .page-header {

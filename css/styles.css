@@ -86,6 +86,8 @@ img {
   text-transform: uppercase;
   color: #4D5AE5;
   margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .menu-link {

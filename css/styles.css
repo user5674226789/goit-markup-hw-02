@@ -41,7 +41,9 @@ img {
   padding-bottom: 24px;
   padding-top: 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-link {

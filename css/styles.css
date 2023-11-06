@@ -54,6 +54,7 @@ img {
 .list {
   list-style-type: none;
   background-color: #FFFFFF;
+  display: flex;
 }
 
 .list-container {
@@ -177,7 +178,7 @@ img {
   text-align: center;
   color: #2e2f42;
   letter-spacing: 0.02em;
-
+  margin-bottom: 72px
 }
 
 .list-title {

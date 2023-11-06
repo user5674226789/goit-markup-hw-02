@@ -61,7 +61,8 @@ img {
 
 .list-container {
   display: flex;
-   gap: 40px;
+  flex-wrap: wrap;
+  column-gap: 24px;
 }
 
 .logotype-span {

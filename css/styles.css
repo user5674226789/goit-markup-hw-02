@@ -114,6 +114,8 @@ img {
 
 .menu-contact {
   display: flex;
+  gap: 40px;
+  margin-right: 0;
 }
 
 .menu-contact:hover,

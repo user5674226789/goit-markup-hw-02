@@ -112,6 +112,7 @@ img {
 
 .address {
   font-style: normal;
+  display: flex;
 }
 
 .contact-information {

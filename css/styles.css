@@ -142,11 +142,17 @@ img {
 
 /* HERO SECTION */
 
-.section {
+.first-section {
   background-color: #2e2f42;
   padding-top: 188px; 
   padding-bottom: 188px;)
 }
+
+.second-section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
 
 .page-title {
   font-family: "Roboto", sans-serif;

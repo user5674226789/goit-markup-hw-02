@@ -29,11 +29,17 @@ img {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding: 16px;
   padding-right: 16px;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .nav-link {
@@ -43,6 +49,10 @@ img {
 .list {
   list-style-type: none;
   background-color: #FFFFFF;
+}
+
+.list-container {
+  display: flex;
 }
 
 .logotype-span {
@@ -70,7 +80,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
-  margin-right: 75px;
+  margin-right: 76px;
 }
 
 .menu-link {
@@ -89,12 +99,8 @@ img {
   color: #404bbf;
 }
 
-.menu_contact {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  color: #434455;
+.menu-contact {
+  display: flex;
 }
 
 .menu-contact:hover,
@@ -201,6 +207,3 @@ img {
 .footer-logotype-span {
   color: #f4f4fd;
 }
-
-
-

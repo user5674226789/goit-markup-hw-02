@@ -186,20 +186,7 @@ padding-bottom: 120px;
   background-color: #404bbf;
 }
 
-.subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  text-align: center;
-  color: #2e2f42;
-  letter-spacing: 0.02em;
-  margin-bottom: 72px;
-}
-  .second-subtitle .visually-hidden {
+.subtitle, .visually-hidden{
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;

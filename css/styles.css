@@ -79,8 +79,13 @@ img {
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
+
+.menu li {
+margin-right: 0;
+}
+
 
 .logotype {
   font-family: "Raleway", sans-serif;

@@ -206,6 +206,7 @@ padding-bottom: 120px;
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
+  flex-basis: calc((100% - 72px) / 4));
 }
 
 .list-title {

@@ -9,10 +9,6 @@ ul,ol {
   list-style-type: none;
 }
 
-img {
-  display: block;
-}
-
 .nav-link {
   text-decoration: none;
 }
@@ -80,9 +76,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   color: #ffffff;
-  text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px
 }
 
 .button {

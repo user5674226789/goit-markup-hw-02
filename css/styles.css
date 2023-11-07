@@ -57,6 +57,7 @@ img {
   display: flex;
   margin-right: 0 ;
   gap: 40px;
+ flex-basis: calc((100% - 72px) / 4));
 }
 
 .list-container {

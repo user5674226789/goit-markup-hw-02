@@ -229,6 +229,11 @@ padding-bottom: 120px;
   letter-spacing: 0.32px;
 }
 
+.list-item {
+flex-basis: calc((100% - 72px) / 4));
+}
+
+
 .page-footer {
   background-color: #2e2f42;
   padding-top: 100px;

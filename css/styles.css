@@ -109,7 +109,7 @@ ul,ol {
   text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
-
+  text-align: center
 }
 
 .list-title {

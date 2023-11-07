@@ -68,6 +68,10 @@ ul,ol {
 
 /* HERO SECTION */
 
+.section {
+   background-color: #2e2f42;
+}
+
 
 .page-title {
   font-family: "Roboto", sans-serif;
@@ -102,7 +106,7 @@ ul,ol {
   font-weight: 700;
   line-height: 40px;
   line-height: 1.11;
-  text-transform: capitalize;;
+  text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
 

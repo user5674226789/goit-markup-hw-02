@@ -65,6 +65,7 @@ img {
   flex-wrap: wrap;
   gap: 40px;
   margin-right: 0;
+  basis: calc((100% - 72px) / 4))
 }
 
 .logotype-span {

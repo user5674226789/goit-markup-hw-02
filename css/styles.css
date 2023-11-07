@@ -62,7 +62,7 @@ img {
 .list-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  column-gap: 40px;
   margin-right: 0;
 }
 

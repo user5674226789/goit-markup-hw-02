@@ -81,7 +81,8 @@ ul,ol {
   line-height: 1.07;
   color: #ffffff;
   letter-spacing: 0.02em;
-}
+  text-align: center;
+  }
 
 .button {
   cursor: pointer;
@@ -109,7 +110,7 @@ ul,ol {
   text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  text-align: center
+  text-align: center;
 }
 
 .list-title {

@@ -231,7 +231,9 @@ padding-bottom: 120px;
 
 .list-item {
 width: calc((100% - 3 * 24px) / 4));
+row-gap: 48px;
 }
+
 
 
 .page-footer {

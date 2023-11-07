@@ -55,6 +55,8 @@ img {
   list-style-type: none;
   background-color: #FFFFFF;
   display: flex;
+  margin-right: 0 ;
+  gap: 40px;
 }
 
 .list-container {

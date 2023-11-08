@@ -9,12 +9,16 @@ ul,ol {
   list-style-type: none;
 }
 
+a {
+ text-decoration: none;
+}
+
 .nav-link {
   text-decoration: none;
 }
 
 .list {
-  list-style-type: none;
+  list-style: none;
   background-color: #FFFFFF;
 }
 

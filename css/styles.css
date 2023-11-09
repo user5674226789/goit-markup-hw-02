@@ -122,7 +122,7 @@ a {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height:  1.5;
+  line-height:  1.2;
   letter-spacing: 0.2em;
   color: #2e2f42;
 }
@@ -153,7 +153,7 @@ a {
  font-style: normal;
 }
 
-third-section {
+.third-section {
  background-color: #F4F4FD;
 }
 

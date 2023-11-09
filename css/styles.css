@@ -7,11 +7,11 @@ body {
 
 ul,ol {
   list-style-type: none;
+  background-color: #FFFFFF;
 }
 
 a {
  text-decoration: none;
- background-color: #FFFFFF;
 }
 
 .nav-link {

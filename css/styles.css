@@ -123,7 +123,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height:  1.2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em; 
   color: #2e2f42;
 }
 
@@ -132,8 +132,8 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24;
-  letter-spacing: 0.32em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .page-footer {

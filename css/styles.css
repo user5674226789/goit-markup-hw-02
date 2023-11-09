@@ -161,3 +161,16 @@ a {
   background-color: #FFFFFF;
 }
 
+.fourth-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+}
+

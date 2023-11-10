@@ -253,4 +253,9 @@ margin-right: 0;
   overflow: hidden;
  }
 
+.second-list {
+ gap: 24px;
+ margin-right: 0;
+}
+
 

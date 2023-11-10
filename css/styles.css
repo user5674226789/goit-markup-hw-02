@@ -79,6 +79,12 @@ a {
   margin-right: 76px;
 }
 
+list-container {
+  display: flex;
+  gap: 40px;
+  margin-right: 0;
+}
+
 .menu-link {
   font-size: "Roboto", sans-serif;
   font-size: 16px;

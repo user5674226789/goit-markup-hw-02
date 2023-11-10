@@ -41,6 +41,7 @@ img {
 
 a {
  text-decoration: none;
+ display: inline-block;
 }
 
 .page-navigator {
@@ -81,7 +82,6 @@ a {
   text-transform: uppercase;
   color: #4D5AE5;
   margin-right: 76px;
-  display: inline-block;
   margin-bottom: 16px;
 }
 

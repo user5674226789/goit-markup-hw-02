@@ -260,6 +260,6 @@ margin-right: 0;
  }
 
 .second-list {
- width:calc((100% - 72px) / 4);
+ width:calc((100% - 3 * 24px) / 4)
 }
 

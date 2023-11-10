@@ -263,3 +263,7 @@ margin-right: 0;
  width:calc((100% - 3 * 24px) / 4)
 }
 
+.third-list {
+  border-bottom-left-radius: 4px;
+}
+

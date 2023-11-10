@@ -228,6 +228,9 @@ margin-right: 0;
 
 .section-list {
   background-color: #FFFFFF;
+  display: flex;
+  gap: 24px;
+  margin-right: 0;
 }
 
 .fourth-section {
@@ -252,10 +255,5 @@ margin-right: 0;
   clip rect(0 0 0 0);
   overflow: hidden;
  }
-
-.second-list {
- gap: 24px;
- margin-right: 0;
-}
 
 

@@ -43,8 +43,9 @@ a {
  text-decoration: none;
 }
 
-.nav-link {
-  text-decoration: none;
+.page-navigator {
+  display: flex;
+  align-items: center;
 }
 
 .list {

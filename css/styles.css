@@ -267,3 +267,8 @@ margin-right: 0;
   border-bottom-left-radius: 4px;
 }
 
+.list-div {
+  padding-top: 32px; 
+  padding-bottom: 32px;
+}
+

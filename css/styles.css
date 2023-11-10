@@ -61,8 +61,8 @@ a {
   border-bottom: 1px solid #e7e9fc;
   padding-bottom: 24px;
   padding-top: 24px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 }

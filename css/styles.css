@@ -85,6 +85,13 @@ a {
   margin-right: 0;
 }
 
+.menu-contact {
+display: flex;
+gap: 40px;
+margin-right: 0;
+}
+
+
 .menu-link {
   font-size: "Roboto", sans-serif;
   font-size: 16px;

@@ -93,7 +93,9 @@ a {
   text-align: left;
   color: #2e2f42;
   text-decoration: none;
-  font-weight: 500
+  font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,

@@ -51,6 +51,9 @@ a {
 .list {
   list-style: none;
   background-color: #ffffff;
+  gap: 24px;
+  margin-right: 24px;
+  margin-right: 0;
 }
 
 .page-header {

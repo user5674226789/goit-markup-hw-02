@@ -94,6 +94,7 @@ a {
 display: flex;
 gap: 40px;
 margin-right: 0;
+align-items: center;
 }
 
 

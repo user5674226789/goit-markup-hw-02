@@ -259,4 +259,7 @@ margin-right: 0;
   overflow: hidden;
  }
 
+.second-list {
+ width:calc((100% - 72px) / 4);
+}
 

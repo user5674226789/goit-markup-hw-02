@@ -227,6 +227,11 @@ margin-right: 0;
  font-style: normal;
 }
 
+.second-section {
+ padding-top: 120px; 
+ padding-bottom: 120px;
+}
+
 .third-section {
  background-color: #F4F4FD;
  padding-top: 120px; 

@@ -284,9 +284,14 @@ margin-top: 15px;
 .list-image {
   padding-top: 32px; 
   padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
 }
 
 .list-div {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.div {
+  padding: 32px 16px;
 }

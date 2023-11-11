@@ -273,10 +273,6 @@ margin-top: 15px;
   overflow: hidden;
  }
 
-.second-list {
- width:calc((100% - 3 * 24px) / 4)
-}
-
 .third-list {
   border-bottom-left-radius: 4px;
 }
@@ -302,4 +298,8 @@ margin-top: 15px;
    display: flex;
    row-gap: 48px;
   column-gap: 24px;
+}
+
+.fourth-list {
+  width:calc((100% - 3 * 24px) / 4)
 }

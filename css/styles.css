@@ -301,5 +301,9 @@ margin-top: 15px;
 }
 
 .fourth-list {
-  width:calc((100% - 3 * 24px) / 4)
+  width:calc((100% - 3 * 24px) / 4);
 }
+
+.section-list {
+   width:calc((100% - 3 * 24px) / 4);
+} 

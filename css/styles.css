@@ -300,4 +300,5 @@ margin-top: 15px;
    flex-wrap: wrap;
    display: flex;
    row-gap: 48px;
+  column-gap: 24px;
 }

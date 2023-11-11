@@ -247,7 +247,7 @@ margin-top: 15px;
 .section-list {
   background-color: #FFFFFF;
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   margin-right: 0;
   flex-wrap: wrap;
   margin-bottom: 0;

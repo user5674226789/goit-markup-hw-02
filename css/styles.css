@@ -36,7 +36,8 @@ ul,ol {
 }
 
 img {
-  display: block;
+  display: block;\
+  width: calc((100% - 72px) / 4);
 }
 
 a {

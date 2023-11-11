@@ -248,7 +248,8 @@ margin-top: 15px;
   display: flex;
   column-gap: 24px;
   margin-right: 0;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .fourth-section {

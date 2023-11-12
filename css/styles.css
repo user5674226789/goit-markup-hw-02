@@ -305,8 +305,16 @@ margin-left: 200px
 
 .fourth-list {
   width:calc((100% - 3 * 24px) / 4);
+  gap: 24px;
+  margin-right: 24px;
+  list-style: none;
+  background-color: #ffffff;
 }
 
 .second-list {
    width:calc((100% - 3 * 24px) / 4);
+   gap: 24px;
+   margin-right: 24px;
+  list-style: none;
+  background-color: #ffffff;
 } 

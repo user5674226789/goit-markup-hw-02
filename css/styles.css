@@ -261,7 +261,7 @@ margin-left: 200px
   padding-bottom: 120px
 }
 
-.visually-hidden {
+visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

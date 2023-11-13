@@ -33,7 +33,7 @@ ul,ol {
   background-color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
- padding: 0;
+  padding: 0;
 }
 
 img {
@@ -48,14 +48,6 @@ a {
 .page-navigator {
   display: flex;
   align-items: center;
-}
-
-.list {
-  list-style: none;
-  background-color: #ffffff;
-  gap: 24px;
-  margin-right: 24px;
-  width: calc((100% - 72px) / 4); 
 }
 
 .page-header {
@@ -89,10 +81,6 @@ a {
 .menu-contact {
 display: flex;
 gap: 40px;
-margin-right: 0;
-align-items: center;
-margin-top: 23px;
-margin-left: 200px
 }
 
 
@@ -150,6 +138,9 @@ margin-left: 200px
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-botton: 48px;
   }
 
 .button {
@@ -165,6 +156,8 @@ margin-left: 200px
   border: none;
   height: 56px;
   border-radius: 4px
+  margin: auto;
+  display: block;
 }
 
 .button:hover,
@@ -182,7 +175,6 @@ margin-left: 200px
   color: #2e2f42;
   letter-spacing: 0.02em;
   text-align: center;
-  background-color: #FFFFFF;
   margin-bottom: 72px;
 }
 
@@ -195,8 +187,6 @@ margin-left: 200px
   letter-spacing: 0.02em; 
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
-  margin-bottom: 8px;
   
 }
 
@@ -207,7 +197,6 @@ margin-left: 200px
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .page-footer {
@@ -227,6 +216,7 @@ margin-left: 200px
 
 .address {
  font-style: normal;
+  margin-left: auto;
 }
 
 .second-section {
@@ -241,11 +231,8 @@ margin-left: 200px
 }
 
 .section-list {
-  background-color: #FFFFFF;
   display: flex;
   gap: 24px;
-  margin-right: 0;
-  flex-wrap: wrap;
   margin-bottom: 0;
 }
 
@@ -269,7 +256,6 @@ margin-left: 200px
  }
 
 .third-list {
-  border-bottom-left-radius: 4px;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -306,9 +292,6 @@ margin-left: 200px
 
 .second-list {
  width: calc((100% - 72px) / 4);
-    gap: 24px;
-    list-style: none;
-    background-color: #ffffff;
 } 
 
 .second-logotype {

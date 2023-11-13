@@ -33,7 +33,7 @@ ul,ol {
   background-color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
+ padding: 0;
 }
 
 img {

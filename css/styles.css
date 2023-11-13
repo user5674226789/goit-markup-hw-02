@@ -297,7 +297,7 @@ gap: 40px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
-  display: inline-block;
+ 
 }
 
 .team-list-title {
@@ -309,6 +309,7 @@ font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
+  
 }
 
 .team-list-text {
@@ -322,6 +323,10 @@ font-family: "Roboto", sans-serif;
 }
 
 .display {
- display:flex;
+ display: flex;
+ aling-items: center;
 }
 
+.inline {
+   display: inline-block;
+}

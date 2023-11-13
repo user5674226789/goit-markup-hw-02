@@ -37,7 +37,6 @@ ul,ol {
 
 img {
   display: block;
-  width: calc((100% - 72px) / 4);
 }
 
 a {
@@ -306,7 +305,6 @@ margin-left: 200px
 .fourth-list {
   width: calc((100% - 3 * 24px) / 4);
   gap: 24px;
-  margin-right: 24px;
   list-style: none;
   background-color: #ffffff;
 }

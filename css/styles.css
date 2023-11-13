@@ -312,11 +312,11 @@ margin-left: 200px
 }
 
 .second-list {
-  flex-basis: calc((100% - 72px) / 4));
-   gap: 24px;
-   margin-right: 24px;
-  list-style: none;
-  background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
+    gap: 24px;
+    margin-right: 0px;
+    list-style: none;
+    background-color: #ffffff;
 } 
 
 .second-logotype {

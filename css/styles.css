@@ -36,7 +36,7 @@ ul,ol {
 }
 
 img {
-  display: block;\
+  display: block;
   width: calc((100% - 72px) / 4);
 }
 
@@ -264,7 +264,7 @@ margin-left: 200px
 .visually-hidden {
   position: absolute;
   width: 1px;
-  heigth: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;

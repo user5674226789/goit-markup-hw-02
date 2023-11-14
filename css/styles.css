@@ -254,6 +254,7 @@ gap: 40px;
 .third-list {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .list-image {
@@ -332,4 +333,8 @@ font-family: "Roboto", sans-serif;
 backgound-color: #fffff;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.team-li {
+  background-color
 }

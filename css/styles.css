@@ -330,4 +330,6 @@ font-family: "Roboto", sans-serif;
 
 .team-list-div {
 backgound-color: #fffff;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }

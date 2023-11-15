@@ -134,7 +134,7 @@ gap: 40px;
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  margin-botton: 48px;
+  margin-bottom: 48px;
   }
 
 .button {
@@ -191,7 +191,6 @@ gap: 40px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px
 }
 
 .page-footer {
@@ -306,7 +305,7 @@ gap: 40px;
 font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;

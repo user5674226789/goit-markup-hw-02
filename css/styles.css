@@ -435,3 +435,8 @@ backgound-color: #fffff;
 .overlay:hover {
   transform: translateY(0%);
 }
+
+.flex {
+display: flex;
+ align-items: baseline;
+}

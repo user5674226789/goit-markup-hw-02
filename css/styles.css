@@ -386,10 +386,7 @@ backgound-color: #fffff;
   justify-content: center;
 }
 
-.social-links:hover {
-  background-color: #404bbf;
-}
-
+.social-links:hover,
 .social-links:focus {
   background-color: #404bbf;
 }

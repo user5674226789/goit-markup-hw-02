@@ -475,6 +475,6 @@ align-items: baseline;
   gap: 16px;
 }
 
-.media {
+.social-list-li {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

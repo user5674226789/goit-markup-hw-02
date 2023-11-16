@@ -387,7 +387,7 @@ backgound-color: #fffff;
 
 .social-links:hover,
 .social-links:focus {
-  background-color: #404bbf;
+  color: #404bbf;
 }
 
 .social-li {

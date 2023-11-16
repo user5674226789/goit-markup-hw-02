@@ -438,7 +438,7 @@ backgound-color: #fffff;
 
 .flex {
 display: flex;
- align-items: baseline;
+align-items: baseline;
 }
 
 .footer-div {

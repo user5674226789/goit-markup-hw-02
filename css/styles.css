@@ -395,3 +395,7 @@ backgound-color: #fffff;
   width: 40px;
   height: 40px;
 }
+
+.social-svg {
+   fill: #f4f4fd;
+}

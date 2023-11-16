@@ -365,3 +365,10 @@ backgound-color: #fffff;
   border-radius: 4px;
   margin-bottom: 8px;
 }
+
+.social-list {
+  display: flex;
+   justify-content: center;
+  gap: 24px;
+  
+}

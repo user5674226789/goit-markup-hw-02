@@ -453,3 +453,8 @@ align-items: baseline;
    color: #FFFFFF;
    margin-bottom: 16px;
 }
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+}

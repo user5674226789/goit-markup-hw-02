@@ -372,3 +372,8 @@ backgound-color: #fffff;
   gap: 24px;
   
 }
+
+.social-li {
+  width: 40px;
+  height: 40px;
+}

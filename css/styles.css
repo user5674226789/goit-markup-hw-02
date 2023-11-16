@@ -398,8 +398,8 @@ backgound-color: #fffff;
   justify-content: center;
 }
 
-.social-menu-links: hover,
-.social-menu-links: focus {
+.social-menu-links:hover,
+.social-menu-links:focus {
    background-color: #31d0aa;
 }
 
@@ -475,7 +475,7 @@ align-items: baseline;
   gap: 16px;
 }
 
-.social-list-li {
+.social-menu-li {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 40px;
   height: 40px;

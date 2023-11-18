@@ -56,6 +56,8 @@ body {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .display {
@@ -78,7 +80,7 @@ line-height: 0.86;
 letter-spacing: 0.03em;
 color: #4D5AE5;
 }
-} 
+
 
 .logotype-span {
 font-size: 18px;

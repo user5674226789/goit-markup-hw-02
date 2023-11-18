@@ -71,6 +71,9 @@ body {
   .container {
     width: 736px;
   }
+
+.menu {
+  display: flex;
 }
 
 @media screen and (min-width: 1158px) {

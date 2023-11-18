@@ -60,10 +60,33 @@ body {
   margin-right: auto;
 }
 
+.menu {
+  display: none;
+}
+
+.logotype {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0,86;
+  letter-spacing: 0,03em;
+  color: #4D5AE5;
+} 
+
+.logotype-span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0,86;
+  letter-spacing: 0,03em;
+  color: #2E2F42;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  .menu {
+    display: flex;
 }
 
 @media screen and (min-width: 1158px) {

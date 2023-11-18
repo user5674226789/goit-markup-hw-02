@@ -71,6 +71,7 @@ body {
   .container {
     width: 736px;
   }
+}
 
 .menu {
   display: flex;

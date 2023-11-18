@@ -64,6 +64,10 @@ body {
   display: none;
 }
 
+.menu-contact {
+  display: none;
+}
+
 
 .logotype {
   font-size: 18px;

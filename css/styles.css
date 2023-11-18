@@ -60,6 +60,10 @@ body {
     margin-right: auto;
 }
 
+.display {
+  display: flex;
+}
+
 .menu {
   display: none;
 }
@@ -84,6 +88,16 @@ body {
   letter-spacing: 0,03em;
   color: #2E2F42;
 }
+
+.mobile-open-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-open-button-icon {
+  stroke: #2F2F37;
 }
 
 @media screen and (min-width: 768px) {

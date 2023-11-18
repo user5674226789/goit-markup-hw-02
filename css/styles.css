@@ -22,7 +22,6 @@ img {
 
 button {
   cursor: pointer;
-   border: none;
 }
 
 li {
@@ -97,9 +96,8 @@ body {
   line-height: 0;
 }
 
-.mobile-open-button-icon {
+.mobile-open-button-icon{
   stroke: #2F2F37;
-   border: none;
 }
 
 @media screen and (min-width: 768px) {

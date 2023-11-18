@@ -72,6 +72,11 @@ body {
   display: none;
 }
 
+.page-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
 
 .logotype {
 font-size: 18px;

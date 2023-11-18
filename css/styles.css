@@ -79,6 +79,7 @@ body {
 }
 
 .logotype {
+align-items: center;
 font-size: 18px;
 font-weight: 700;
 line-height: 0.86;

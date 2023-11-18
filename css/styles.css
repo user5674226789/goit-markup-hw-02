@@ -74,18 +74,19 @@ body {
 
 
 .logotype {
-color: #4D5AE5;
 font-size: 18px;
 font-weight: 700;
-line-height: 21px; 
-letter-spacing: 0.54px;
+line-height: 0.86;
+letter-spacing: 0.03em;
+color: #4D5AE5;
+}
 } 
 
 .logotype-span {
 font-size: 18px;
 font-weight: 700;
-line-height: 21px; 
-letter-spacing: 0.54px;
+line-height: 0.86;
+letter-spacing: 0.03em;
 color: #2E2F42;
 }
 

@@ -60,28 +60,16 @@ body {
   margin-right: auto;
 }
 
-/* Common styles */
-/* Header Mobile Styles */
-  .menu {
-    display: none;
-  }
-/* Header Mobile Styles */
-
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 768px;
   }
-}
-
-.menu {
-  display: flex;
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    
   }
 }

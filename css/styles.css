@@ -79,7 +79,6 @@ font-weight: 700;
 line-height: 0.86;
 letter-spacing: 0.03em;
 color: #4D5AE5;
-margin-top: 17.5;
 }
 
 
@@ -89,7 +88,6 @@ font-weight: 700;
 line-height: 0.86;
 letter-spacing: 0.03em;
 color: #2E2F42;
-margin-top: 17.5px;
 }
 
 .mobile-open-button {
@@ -97,7 +95,6 @@ margin-top: 17.5px;
   background-color: transparent;
   padding: 0;
   line-height: 0;
-  margin-top: 16px;
 }
 
 .mobile-open-button-icon{

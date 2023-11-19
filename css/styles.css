@@ -118,6 +118,10 @@ color: #2E2F42;
   background-color: #FFF;
 }
 
+.mobile-menu-container {
+  postion: relative;
+}
+
 .mobile-menu-close-button {
   position: absolute;
   top: 0;

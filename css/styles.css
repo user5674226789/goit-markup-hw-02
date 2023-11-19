@@ -68,7 +68,7 @@ body {
   display: none;
 }
 
-.menu-contact {
+.address {
   display: none;
 }
 
@@ -84,6 +84,8 @@ font-weight: 700;
 line-height: 0.86;
 letter-spacing: 0.03em;
 color: #4D5AE5;
+padding: 17px
+font-famile: "Raleway", sans-serif
 }
 
 

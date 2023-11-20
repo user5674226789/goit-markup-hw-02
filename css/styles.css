@@ -116,10 +116,15 @@ color: #2E2F42;
   height: 100%
   z-index: 99999999999;
   background-color: #FFF;
+  transform: translateX(100%) 
 }
 
 .mobile-menu-container {
   postion: relative;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0%)
 }
 
 .mobile-menu-close-button {

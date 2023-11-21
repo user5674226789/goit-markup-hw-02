@@ -1,4 +1,4 @@
- :root {
+  :root {
      --color: #4d5ae5;
      --color2: #F4F4FD;
  }
@@ -1792,10 +1792,9 @@ width: 288px;
    
 .header-background{
     display: flex;
-    justify-content: center;
-    align-content: space-around;
-    align-items: center;
-    margin: 0;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
 }
   
 

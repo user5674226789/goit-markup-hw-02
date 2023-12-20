@@ -82,7 +82,8 @@ a {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.32px;
-  width: 303px;
+  max-width: 303px;
+  margin-top: 8px;
 }
 
   .container {

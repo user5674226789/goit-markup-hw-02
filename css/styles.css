@@ -1,4 +1,4 @@
-body {
+ body {
   background: #0E1823;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -69,8 +69,8 @@ a {
    font-weight: 400;
    line-height: 14px;
    letter-spacing: -0.24px;
-   margin-bottom:40px;
-   width: 335px;
+   margin-bottom: 40px;
+   max-width: 335px;
  }
 
 .reviews-section-li-text{
@@ -103,7 +103,6 @@ a {
     border-radius: 24px;
     background: #FBFBFB;
     width: 335px;
-    height: 282px;
     padding: 32px 8px;
     gap: 8px;
     flex-shrink: 0;
@@ -129,7 +128,7 @@ a {
     font-weight: 500;
     line-height: 28px; /* 100% */
     letter-spacing: -0.56px;
-    width: 335px;
+    max-width: 335px;
     margin-bottom: 25px;
     text-align: center;
     margin-left: auto;
@@ -152,11 +151,10 @@ a {
     padding-top: 80px;
     padding-bottom: 80px
    }
+  
   .reviews-section-li {
     border-radius: 24px;
     background: #FBFBFB;
-    /* width: 335px; */
-    /* height: 282px; */
     padding: 32px 8px;
     gap: 8px;
     flex-shrink: 0;
@@ -168,25 +166,24 @@ a {
 
   .reviews-section-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     justify-content: center;
+    /* flex-direction: column; */
   }
 
   .reviews-title {
-    color: #FBFBFB;
-    font-family: Inter;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 100% */
-    letter-spacing: -0.56px;
-    width: 335px;
-    margin-bottom: 25px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+   color: #FBFBFB;
+   text-align: center;
+   font-family: Inter;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px; /* 100% */
+   letter-spacing: -0.96px;
+   margin-bottom: 25px;
+   max-width: 704px;
   }
 
   .reviews-title-container {
@@ -194,8 +191,9 @@ a {
     flex-direction: column;
     align-items: center;
   }
-}
-}
+
+
+  .reviews-text {text-align: center;font-family: Inter;font-size: 14px;font-style: normal;font-weight: 400;line-height: 18px; /* 128.571% */letter-spacing: -0.28px;max-width: 571px;}
 
 @media screen and (min-width: 1280px) {
   .container {

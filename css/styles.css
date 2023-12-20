@@ -100,6 +100,7 @@ a {
     padding-top: 80px;
     padding-bottom: 80px
    }
+ 
   .reviews-section-li {
     border-radius: 24px;
     background: #FBFBFB;
@@ -171,7 +172,6 @@ a {
     align-items: center;
     gap: 40px;
     justify-content: center;
-    /* flex-direction: column; */
   }
 
   .reviews-title {

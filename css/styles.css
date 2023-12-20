@@ -85,6 +85,14 @@ a {
   width: 303px;
 }
 
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
 
 @media screen and (max-width: 767px) {
    .reviews {
@@ -138,8 +146,6 @@ a {
 @media screen and (min-width: 768px){
    .container {
     max-width: 768px;
-    padding-right: 25px;
-    padding-left: 25px;
   }
 
   .reviews {

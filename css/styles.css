@@ -1,6 +1,10 @@
 body {
   background: #0E1823;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;\
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 h1,
@@ -45,16 +49,27 @@ a {
   padding-left: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   
 }
 
 @media screen and (min-width: 768px) {
+   .container {
+    max-width: 768px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+}
+ 
 }
 
 @media screen and (min-width: 1440px) {
-
+    max-width: 1440px;
+    padding-right: 25px;
+    padding-left: 25px;
 }

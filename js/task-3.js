@@ -5,3 +5,4 @@ function getElementWidth(content, padding, border) {
     const totalWidth = contentValue + 2 * paddingValue + 2 * borderValue;
     return totalWidth;
 }
+    

@@ -1,7 +1,8 @@
 makeTransaction(quantity, pricePerDroid, customerCredits) 
 totalPrice = quantity * pricePerDroid;
 if (customerCredits < totalPrice) {
-    return "Insufficient funds";
+  const send "Insufficient funds";
+  return send
 }
     else {
     message = "You ordered {quantity} droids worth {totalPrice} credits!";

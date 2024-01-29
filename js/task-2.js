@@ -3,7 +3,7 @@ function makeArray(firstArray, secondArray, maxLength) {
     if (result <= maxLength) {
         return result;
     } else {
-        return result.slice(maxLength)
+        return result.slice(0, maxLength)
     }
 }
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]

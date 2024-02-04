@@ -1,14 +1,14 @@
-function makeArray(firstArray, secondArray, maxLength) {
-    const result = firstArray.concat(secondArray);
-    if (result <= maxLength) {
-        return result;
-    } else {
-        return result.slice(0, maxLength)
-    }
+function calcAverageCalories(days) {
+    const totalCalories = sum('calories');
+    const averageCalories = totalCalories / len(days);
+    return averageCalories;
 }
-console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
-console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
-console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+days = [
+    {'day': 'Monday', 'calories': 2500},
+    {'day': 'Tuesday', 'calories': 2200},
+    {'day': 'Wednesday', 'calories': 3000},
+    {'day': 'Thursday', 'calories': 2800},
+    {'day': 'Friday', 'calories': 2600},
+    {'day': 'Saturday', 'calories': 2700},
+    {'day': 'Sunday', 'calories': 2400}
+]

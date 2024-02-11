@@ -1,19 +1,6 @@
-function calcAverageCalories(days) {
-    if (days.length === 0) {
-        return 0;
-    }
-   let totalCalories = 0;
-    for (const day of days) {
-        totalCalories += day.calories;
-    }
-    return totalCalories / days.lenght;
+const getUsersWithFriend = (users, friendName) => {
+  const filteredUsers = users.filter((user) => {
+    return user.friends.some((friend) => friend === friendName);
+  });
+  return filteredUsers;
 }
-days = [
-    {'day': 'Monday', 'calories': 2500},
-    {'day': 'Tuesday', 'calories': 2200},
-    {'day': 'Wednesday', 'calories': 3000},
-    {'day': 'Thursday', 'calories': 2800},
-    {'day': 'Friday', 'calories': 2600},
-    {'day': 'Saturday', 'calories': 2700},
-    {'day': 'Sunday', 'calories': 2400}
-]

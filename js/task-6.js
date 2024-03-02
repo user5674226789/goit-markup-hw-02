@@ -14,6 +14,7 @@ function createBoxes(amount) {
 }
 
 
+
 const input = document.querySelector('input');
 const createButton = document.querySelector('[data-create]');
 const destroyButton = document.querySelector('[data-destroy]');

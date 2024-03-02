@@ -11,7 +11,7 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     boxesContainer.appendChild(box);
   }
-
+}
 
 const input = document.querySelector('input');
 const createButton = document.querySelector('[data-create]');

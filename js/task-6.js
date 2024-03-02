@@ -6,8 +6,8 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
     const size = 30 + i * 10; // Збільшення розміру на 10px для кожного нового бокса
-    box.style.width = ${size}px;
-    box.style.height = ${size}px;
+    box.style.width = `${size}px`;
+    box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
     boxesContainer.appendChild(box);
   }

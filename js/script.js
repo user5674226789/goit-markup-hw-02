@@ -75,12 +75,6 @@ const galleryItems = images.map(image => `
 `).join('');
 
 galleryContainer.innerHTML = galleryItems;
-galleryContainer.addEventListener('click', e => {
-    e.preventDefault();
-    if (e.target.classList.contains('gallery-image')) {
-      console.log(e.target.dataset.source);
-    }
-  });
   galleryContainer.addEventListener('click', e => {
     e.preventDefault();
     if (e.target.classList.contains('gallery-image')) {

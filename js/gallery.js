@@ -64,23 +64,26 @@ const images = [
   },
 ];
 
-const galleryContainer = document.querySelector('.gallery');
+  const galleryContainer = document.querySelector(".gallery");
+images.forEach(({preview, original, description}) => {
+    const galleryItem = document.createElement("li");
+    galleryItem.classList.add("gallery-item");
+    const galleryLink = document.createElement ("a");
+    galleryLink.classList.add("gallery-link");
+    const galleryImg =  document.createElement ("img");
+    galleryLink.classList.add("gallery-img");
+    galleryImg.src = preview;
+    galleryImg.alt = description;
+    galleryImg.dataset.source = original;
+    galleryContainer.appendChild (galleryItem);
+    galleryItem.appendChild (galleryLink);
+    galleryItem.appendChild (galleryImg);
+});
 
-const galleryItems = images.map(image => `
-  <li class="gallery-item">
-    <a class="gallery-link" href="${image.original}">
-      <img class="gallery-image" src="${image.preview}" data-source="${image.original}" alt="${image.description}">
-    </a>
-  </li>
-`).join('');
+const galleryLink = document.querySelectorAll(".gallery-link");
+galleryLinks.forEach(link => {
+    link.addEventListener("click", event => {
+        event.preventDefault();
+    })
+})
 
-galleryContainer.innerHTML = galleryItems;
-  galleryContainer.addEventListener('click', e => {
-    e.preventDefault();
-    if (e.target.classList.contains('gallery-image')) {
-      const instance = basicLightbox.create(`
-        <img src="${e.target.dataset.source}" width="800" height="600">
-      `);
-      instance.show();
-    }
-  });

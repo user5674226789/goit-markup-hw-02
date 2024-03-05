@@ -63,27 +63,36 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+const galleryContainer = document.querySelector(".gallery");
 
-  const galleryContainer = document.querySelector(".gallery");
-images.forEach(({preview, original, description}) => {
+const galleryItems = images.map(({ preview, original, description }) => {
     const galleryItem = document.createElement("li");
     galleryItem.classList.add("gallery-item");
-    const galleryLink = document.createElement ("a");
+
+    const galleryLink = document.createElement("a");
     galleryLink.classList.add("gallery-link");
-    const galleryImg =  document.createElement ("img");
-    galleryLink.classList.add("gallery-img");
+    galleryLink.href = original;
+
+    const galleryImg = document.createElement("img");
+    galleryImg.classList.add("gallery-image");
     galleryImg.src = preview;
-    galleryImg.alt = description;
     galleryImg.dataset.source = original;
-    galleryContainer.appendChild (galleryItem);
-    galleryItem.appendChild (galleryLink);
-    galleryItem.appendChild (galleryImg);
+    galleryImg.alt = description;
+
+    galleryLink.appendChild(galleryImg);
+    galleryItem.appendChild(galleryLink);
+    return galleryItem;
 });
 
-const galleryLink = document.querySelectorAll(".gallery-link");
-galleryLinks.forEach(link => {
-    link.addEventListener("click", event => {
-        event.preventDefault();
-    })
-})
+galleryItems.forEach(galleryItem => {
+    galleryContainer.appendChild(galleryItem);
+});
 
+galleryContainer.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (event.target.tagName === 'IMG') {
+        const largeImageSource = event.target.dataset.source;
+        const lightbox = basicLightbox.create(`<img src="${largeImageSource}">`);
+        lightbox.show();
+    }
+});

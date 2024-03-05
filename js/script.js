@@ -62,4 +62,31 @@ const images = [
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
   },
-];і
+];
+
+const galleryContainer = document.querySelector('.gallery');
+
+const galleryItems = images.map(image => `
+  <li class="gallery-item">
+    <a class="gallery-link" href="${image.original}">
+      <img class="gallery-image" src="${image.preview}" data-source="${image.original}" alt="${image.description}">
+    </a>
+  </li>
+`).join('');
+
+galleryContainer.innerHTML = galleryItems;
+galleryContainer.addEventListener('click', e => {
+    e.preventDefault();
+    if (e.target.classList.contains('gallery-image')) {
+      console.log(e.target.dataset.source);
+    }
+  });
+  galleryContainer.addEventListener('click', e => {
+    e.preventDefault();
+    if (e.target.classList.contains('gallery-image')) {
+      const instance = basicLightbox.create(`
+        <img src="${e.target.dataset.source}" width="800" height="600">
+      `);
+      instance.show();
+    }
+  });

@@ -1,42 +1,52 @@
-"use strict";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+ const delayForm=document.querySelector(".form");
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('form');
 
-  if (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
 
-      const delay = parseInt(this.elements.delay.value, 10);
-      const state = form.querySelector('input[name="state"]:checked').value;
+delayForm.addEventListener('submit', event => {
+  event.preventDefault();
+  const timer = event.currentTarget.elements.delay.value;
+  const radio = event.currentTarget.elements.state.value;
 
-      const promise = new Promise((resolve, reject) => {
-        setTimeout(() => {
-          (state === 'fulfilled') ? resolve(delay) : reject(delay);
-        }, delay);
-      });
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
 
-      promise.then(
-        delay => showSnackbar('Success', `✅ Fulfilled promise in ${delay}ms`, '#59A10D'),
-        delay => showSnackbar('Error', `❌ Rejected promise in ${delay}ms`, '#EF4040')
-      );
-    });
-  }
+      console.log(timer, radio );
+      if (radio ==="fulfilled") {
+        resolve(
+  
+          );
+      } else {
+        reject(
+    
+        );
+      }
+    }, timer);
+  });
 
-  function showSnackbar(title, message, backgroundColor) {
-    const toastOptions = {
-      title: title,
-      message: message,
-      backgroundColor: backgroundColor,
-    };
+// Registering promise callbacks
+promise
+  .then(value => {
+    iziToast.success({  
+      color: 'green',
+      position: "topRight",
+      message: `✅ Fulfilled promise in ${timer}ms`
+  })
+  })
+  .catch(error => {
+    iziToast.error({ 
+      color: 'red',
+      position: "topRight",          
+      message: `❌ Rejected promise in ${timer}ms`
+  })
+  });
 
-    if (title === 'Success') {
-      iziToast.success(toastOptions);
-    } else if (title === 'Error') {
-      iziToast.error(toastOptions);
-    }
-  }
 });
+
+
+
+
+ 
+  

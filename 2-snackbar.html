@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS-HW-10-SNACKBAR</title>
     
-    
-    <title>JS-HW-09-FORM</title>
-  <script type="module" crossorigin src="/goit-markup-hw-01/commonHelpers2.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-markup-hw-01/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/goit-markup-hw-01/assets/2-snackbar-987df566.css">
-  <link rel="stylesheet" href="/goit-markup-hw-01/assets/reset-668a7bea.css">
-</head>
-<body>
-    <p><a href="./index.html">Go back</a></p>
+    <script type="module" crossorigin src="/goit-markup-hw-01/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-markup-hw-01/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-markup-hw-01/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-markup-hw-01/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-markup-hw-01/assets/styles-9679ed40.css">
+  </head>
+  <body>
+    <form class="form">
+      <label class="delay">
+        Delay (ms)
+        <input class="input-delay" type="number" name="delay" required />
+      </label>
 
-    <form class="feedback-form" autocomplete="off">
-        <label>
-          Email
-          <input type="email" name="email" autofocus />
+      <fieldset>
+        <legend>State</legend>
+        <label class="fulfilled">
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
         </label>
-        <label>
-          Message
-          <textarea name="message"  rows="10"></textarea>
+        <label class="rejected">
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
         </label>
-        <button type="submit">Submit</button>
-      </form>
-      
-</body>      
+      </fieldset>
+
+      <button class="create-notification" type="submit">
+        Create notification
+      </button>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+  </body>
 </html>

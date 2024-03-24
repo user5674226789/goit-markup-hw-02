@@ -1,15 +1,11 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* include css partials with default @import url() */
+
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -23,130 +19,188 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.text-link {
-  font-family: Montserrat, sans-serif;
-  color: black;
-  margin-left: 26px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
-}
 
-.timer-box {
-  margin-left: 105px;
-  margin-top: 40px;
-}
-
-#datetime-picker {
-  margin-right: 8px;
-  padding: 6px;
-  width: 272px;
-  border-radius: 4px;
-  border-width: 0.5px;
-  border-color: #808080;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  outline: none;
-}
-
-#datetime-picker:hover,
-#datetime-picker:focus {
-  border-color: black;
-}
-
-#datetime-picker:active {
-  border-color: #4e75ff;
-}
-
-.btn-timer {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #989898;
-  border-radius: 8px;
+.pagelink {
+  display: inline-flex;
+  font-size: large;
+  margin: 20px 0;
   padding: 8px 16px;
-  width: 75px;
-  height: 40px;
-  background: #cfcfcf;
-  border: none;
+  background-color: #4e75ff;
+  border-radius: 10px;
+  color: aliceblue;
 }
 
 .timer {
   display: flex;
-  margin-top: 20px;
-  width: 346px;
-  height: 72px;
-  gap: 24px;
+  column-gap: 24px;
 }
 
-.btn-active {
-  background: #4e75ff;
-  color: #fff;
-}
-
-.btn-active:hover,
-.btn-active:focus {
-  background: #6c8cff;
-}
-
-.field {
+span {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0px;
+  font-size: large;
+  font-family: 'Montserrat';
 }
 
-.value {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+span.value {
   font-size: 40px;
   line-height: 1.2;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  text-align: center;
+  font-weight: 400;
 }
 
-.label {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+span.label {
   font-size: 16px;
   line-height: 1.5;
-  color: #2e2f42;
-  text-align: center;
-  margin-top: 5px;
+  font-weight: 400;
 }
 
-.form {
-  display: block;
-  margin-top: 30px;
+button:disabled {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #cfcfcf;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #4e75ff;
+}
+
+input#datetime-picker.flatpickr-input {
+  padding-block: 16px;
+  padding: 0;
+  background-color: #ffffff;
+  color: #2e2f42;
+  text-indent: 16px;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 4px;
+  border-color: #808080;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker:hover {
+  border-style: solid;
+  border-color: #000000;
+}
+
+input#datetime-picker.flatpickr-input:active {
+  border-width: 1px;
+  border-color: #4e75ff;
+  border-style: solid;
 }
 
 fieldset {
   margin: 20px 0;
-}
-
-input {
-  padding: 10px;
-}
-
-fieldset {
   display: flex;
-  max-width: 250px;
+  max-width: 360px;
   column-gap: 30px;
+  padding: 0;
+  border-radius: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #808080;
+}
+fieldset:hover {
+  border-width: 1px;
+  border-color: #000000;
 }
 
-.form label,
-.form input,
-.form fieldset
-.form button {
-  display: block;
-  
+.delay {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  gap: 8px;
 }
-.form fieldset label {
-  display: inline-block;
-  margin-right: 20px;
+
+legend {
+  border-width: inherit;
+  padding: 0;
+  margin-left: 28px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: 'Montserrat';
+}
+
+.input-delay {
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border: 1px;
+  border-color: #808080;
+}
+
+input.input-delay {
+  border-style: solid;
+  max-width: 360px;
+  padding: 0;
+}
+
+.fulfilled {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.rejected {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
+.create-notification {
+  width: 360px;
+  height: 40px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.create-notification:hover {
+  background-color: #6c8cff;
+
+}
+
+input[type='radio' i] {
+  background-color: initial;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+.pagelink:hover {
+  background-color: #6c8cff;
 }

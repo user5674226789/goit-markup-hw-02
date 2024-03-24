@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -12,9 +13,10 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    userSelectedDate = selectedDates[0]; 
-    timeInterval = userSelectedDate - new Date(); 
-    if (timeInterval < 1) {
+    userSelectedDate = selectedDates[0];
+    timeInterval = userSelectedDate - options.defaultDate;
+
+    if (timeInterval < 0) {
       iziToast.error({
         color: 'red',
         position: 'topRight',
@@ -26,6 +28,7 @@ const options = {
     }
   },
 };
+
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
@@ -45,28 +48,33 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-
 const calendar = flatpickr('#datetime-picker', options);
 const inputTime = document.querySelector('#datetime-picker');
-const startBtn = document.querySelector('button');
-const showTime = document.querySelectorAll('.value');
+const startBtn = document.querySelector('[data-start]');
+const timeValueElements = document.querySelectorAll('.value');
 
-console.log(showTime);
+
+console.log(timeValueElements);
+
 startBtn.disabled = true;
+
 startBtn.addEventListener('click', event => {
   const repeatTime = setInterval(() => {
     timeInterval = userSelectedDate - new Date();
     inputTime.disabled = true;
-    if (timeInterval < 1) {
+
+    if (timeInterval < 0) {
       startBtn.disabled = true;
       inputTime.disabled = false;
       clearInterval(repeatTime);
       return;
     }
+
     const timer = convertMs(timeInterval);
-    showTime[0].innerText = timer.days.toString().padStart(2, '0');
-    showTime[1].innerText = timer.hours.toString().padStart(2, '0');
-    showTime[2].innerText = timer.minutes.toString().padStart(2, '0');
-    showTime[3].innerText = timer.seconds.toString().padStart(2, '0');
+
+    timeValueElements[0].textContent = timer.days.toString().padStart(2, '0');
+    timeValueElements[1].textContent = timer.hours.toString().padStart(2, '0');
+    timeValueElements[2].textContent = timer.minutes.toString().padStart(2, '0');
+    timeValueElements[3].textContent = timer.seconds.toString().padStart(2, '0');
   }, 1000);
 });

@@ -1,4 +1,3 @@
-
 const formSet = document.querySelector('.feedback-form');
 const inputinfo = formSet.elements.email;
 const areainfo = formSet.elements.message;

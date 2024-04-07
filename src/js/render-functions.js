@@ -1,37 +1,44 @@
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
-
-const formOfDelay = document.querySelector(".form");
-
-formOfDelay.addEventListener('submit', event => {
-  event.preventDefault();
-  
-  const timer = parseInt(event.currentTarget.elements.delay.value);
-  const radio = event.currentTarget.elements.state.value;
-  
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (radio === "fulfilled") {
-        resolve(timer);
-      } else {
-        reject(timer);
+export function renderImages(imagesArr) {
+  return imagesArr
+    .map(
+      ({
+        webformatURL,
+        largeImageURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      }) => {
+        return `<li class="list-item">
+     <a class="gallery-link" href ="${largeImageURL}">
+     <img src="${webformatURL}" alt="${tags}" class="gallery-image"
+     </a>
+     
+      <ul class="information-list">
+        <li class="item-information-container">
+          <h2 class="main-info">Likes </h2>
+            <p class="info">${likes}</p>
+          
+        </li>
+        <li class="item-information-container">
+          <h2 class="main-info"> Views</h2>
+            <p class="info">${views}</p>
+          
+        </li>
+        <li class="item-information-container">
+          <h2 class="main-info">Comments </h2>
+            <p class="info">${comments}</p>
+          
+        </li>
+        <li class="item-information-container">
+          <h2 class="main-info">Downloads </h2>
+            <p class="info">${downloads}</p>
+        </li>
+      </ul>
+   
+    </li>`;
       }
-    }, timer);
-  });
-
-  promise
-    .then(delayValue => {
-      iziToast.success({
-        color: 'green',
-        position: "topRight",
-        message: `Fulfilled promise in ${delayValue}ms`
-      });
-    })
-    .catch(delayValue => {
-      iziToast.error({
-        color: 'red',
-        position: "topRight",
-        message: `Rejected promise in ${delayValue}ms`
-      });
-    });
-});
+    )
+    .join('');
+}

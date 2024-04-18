@@ -1,7 +1,3 @@
-import iziToast from 'izitoast';
-import { refs, lightbox } from '../main';
-import 'izitoast/dist/css/iziToast.min.css';
-
 export function renderImg(arr) {
   if (arr.length === 0) {
     iziToast.error({

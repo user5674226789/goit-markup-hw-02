@@ -25,6 +25,7 @@ async function onFormSubmit(e) {
   refs.imagesContainer.innerHTML = '';
 
   currentPage = 1;
+  maxPage = 0; // Додано скидання maxPage
   showLoader();
   const data = await getImages(query, currentPage);
 
@@ -40,12 +41,7 @@ async function onFormSubmit(e) {
   hideLoader();
   checkBtnStatus();
   e.target.reset();
-
 }
-
-refs.btnShowMore.addEventListener('click', onLoadMoreClick);
-
-
 
 async function onLoadMoreClick() {
   currentPage += 1;
@@ -67,10 +63,21 @@ async function onLoadMoreClick() {
   } catch (err) {
     console.log(err);
   }
-    myScroll();
+  myScroll();
   hideLoader();
   checkBtnStatus();
 }
+
+function renderImages(images) {
+  images.forEach(image => {
+    const imgElement = document.createElement('img');
+    imgElement.src = image.url; // Припустимо, що у вас є властивість url для зображення
+    refs.imagesContainer.appendChild(imgElement);
+  });
+}
+
+refs.btnShowMore.addEventListener('click', onLoadMoreClick);
+
 function checkValidity(query, hits) {
   if (!query.trim()) {
     iziToast.show({

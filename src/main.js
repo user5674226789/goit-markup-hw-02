@@ -124,7 +124,7 @@ function checkBtnStatus() {
 }
 function myScroll() {
     const container = document.querySelector('.js-images-container');
-    const scrollAmount = container.scrollHeight - container.clientHeight;
+    const scrollAmount = container.scrollHeight;
     container.scrollTo({
         top: scrollAmount,
         behavior: 'smooth'

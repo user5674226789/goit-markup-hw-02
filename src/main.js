@@ -116,8 +116,10 @@ function checkBtnStatus() {
   }
 }
 function myScroll() {
-    scrollBy({
-        "top": 1000,
-         behavior: "smooth"
-    })
+    const container = document.querySelector('.js-images-container');
+    const scrollAmount = container.scrollHeight - container.clientHeight;
+    container.scrollTo({
+        top: scrollAmount,
+        behavior: 'smooth'
+    });
 }

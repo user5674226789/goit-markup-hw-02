@@ -1,4 +1,3 @@
-import { fetchImg } from './js/pixabay-api';
 import { renderImg } from './js/render-functions';
 import SimpleLightbox from 'simplelightbox';
 import iziToast from 'izitoast';

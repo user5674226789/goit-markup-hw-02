@@ -8,7 +8,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 export const refs = {
   searchForm: document.querySelector('.search-form'),
   inputElement: document.querySelector('.search-input'),
-  load: document.querySelector('.load'),
   galleryList: document.querySelector('.gallery'),
   loader: document.querySelector('.loader'),
 };

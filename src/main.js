@@ -1,5 +1,3 @@
-import { fetchImg } from './js/pixabay-api';
-import { renderImg } from './js/render-functions';
 import SimpleLightbox from 'simplelightbox';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -99,6 +97,14 @@ refs.load.addEventListener('click', async () => {
   }
 });
 
+function showLoadMore() {
+  refs.btnShowMore.classList.remove('hidden');
+}
+
+function hideLoadMore() {
+  refs.btnShowMore.classList.add('hidden');
+}
+
 function showLoader() {
   refs.loader.classList.remove('hidden');
 }
@@ -107,14 +113,19 @@ function hideLoader() {
   refs.loader.classList.add('hidden');
 }
 
-function showLoadMoreBtn() {
-  refs.load.style.display = 'block';
+function checkBtnStatus() {
+  if (currentPage >= maxPage) {
+    hideLoadMore();
+  } else {
+    showLoadMore();
+  }
 }
-
-function hideLoadMoreBtn() {
-  refs.load.style.display = 'none';
+function myScroll() {
+    scrollBy({
+        "top": 1000,
+         behavior: "smooth"
+    })
 }
-
 function endList() {
   hideLoadMoreBtn();
   iziToast.error({

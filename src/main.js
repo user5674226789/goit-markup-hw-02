@@ -1,4 +1,4 @@
-mport { renderImages } from './js/render-functions';
+import { renderImages } from './js/render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import iziToast from 'izitoast';
@@ -28,7 +28,7 @@ async function onFormSubmit(e) {
   maxPage = 0;
   showLoader();
   try {
-    const data = await getImages(query, currentPage); 
+    const data = await getImages(query, currentPage);
 
     if (!checkValidity(query, data.hits)) {
       hideLoader();
@@ -52,7 +52,7 @@ async function onLoadMoreClick() {
   showLoader();
 
   try {
-    const data = await getImages(query, currentPage); 
+    const data = await getImages(query, currentPage);
     renderImages(data.hits);
     
     if (currentPage >= maxPage) {
@@ -125,3 +125,7 @@ function myScroll() {
     behavior: 'smooth'
   });
 }
+
+
+
+

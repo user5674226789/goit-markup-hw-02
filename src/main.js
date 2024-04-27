@@ -1,9 +1,9 @@
-import { renderImages } from './js/render-functions';
+mport { renderImages } from './js/render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { getImages } from './js/pixabay-api'; // Виправлено назву функції для отримання зображень з API
+import { getImages } from './js/pixabay-api'; 
 
 let query;
 let currentPage = 1;
@@ -27,19 +27,24 @@ async function onFormSubmit(e) {
   currentPage = 1;
   maxPage = 0;
   showLoader();
-  const data = await getImages(query, currentPage); // Викликати функцію для отримання зображень з API
+  try {
+    const data = await getImages(query, currentPage); 
 
-  if (!checkValidity(query, data.hits)) {
+    if (!checkValidity(query, data.hits)) {
+      hideLoader();
+      hideLoadMore(); 
+      return;
+    }
+
+    maxPage = Math.ceil(data.totalHits / pageSize);
+    renderImages(data.hits);
     hideLoader();
-    hideLoadMore(); 
-    return;
+    checkBtnStatus();
+    e.target.reset();
+  } catch (error) {
+    console.error(error);
+    hideLoader();
   }
-
-  maxPage = Math.ceil(data.totalHits / pageSize);
-  renderImages(data.hits);
-  hideLoader();
-  checkBtnStatus();
-  e.target.reset();
 }
 
 async function onLoadMoreClick() {
@@ -47,7 +52,7 @@ async function onLoadMoreClick() {
   showLoader();
 
   try {
-    const data = await getImages(query, currentPage); // Викликати функцію для отримання зображень з API
+    const data = await getImages(query, currentPage); 
     renderImages(data.hits);
     
     if (currentPage >= maxPage) {
@@ -66,16 +71,6 @@ async function onLoadMoreClick() {
   hideLoader();
   checkBtnStatus();
 }
-
-function renderImages(images) {
-  images.forEach(image => {
-    const imgElement = document.createElement('img');
-    imgElement.src = image.url;
-    refs.imagesContainer.appendChild(imgElement);
-  });
-}
-
-refs.btnShowMore.addEventListener('click', onLoadMoreClick); 
 
 function checkValidity(query, hits) {
   if (!query.trim()) {

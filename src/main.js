@@ -3,7 +3,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { fetchImages } from './js/pixabay-api'; /
+import { getImages } from './js/pixabay-api'; // Виправлено назву функції для отримання зображень з API
 
 let query;
 let currentPage = 1;
@@ -27,7 +27,7 @@ async function onFormSubmit(e) {
   currentPage = 1;
   maxPage = 0;
   showLoader();
-  const data = await fetchImages(query, currentPage); 
+  const data = await getImages(query, currentPage); // Викликати функцію для отримання зображень з API
 
   if (!checkValidity(query, data.hits)) {
     hideLoader();
@@ -47,7 +47,7 @@ async function onLoadMoreClick() {
   showLoader();
 
   try {
-    const data = await fetchImages(query, currentPage);
+    const data = await getImages(query, currentPage); // Викликати функцію для отримання зображень з API
     renderImages(data.hits);
     
     if (currentPage >= maxPage) {

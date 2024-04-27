@@ -83,7 +83,7 @@ function renderImages(images) {
 refs.btnShowMore.addEventListener('click', onLoadMoreClick); 
 
 async function fetchImages(query, page) {
-  const url = `https://pixabay.com/api/?key=YOUR_API_KEY&q=${query}&page=${page}&per_page=${pageSize}`;
+  const url = `https://pixabay.com/api/?&q=${query}&page=${page}&per_page=${pageSize}`;
   const response = await axios.get(url);
   return response.data;
 }

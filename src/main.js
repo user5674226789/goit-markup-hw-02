@@ -70,7 +70,6 @@ async function onLoadMoreClick() {
   hideLoader();
   checkBtnStatus();
 }
-refs.btnShowMore.addEventListener('click', onLoadMoreClick); 
 
 async function fetchImages(query, page) {
   const url = `https://pixabay.com/api/?key=YOUR_API_KEY&q=${query}&page=${page}&per_page=${pageSize}`;

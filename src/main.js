@@ -7,7 +7,6 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { getImages } from "./js/pixabay-api.js";
 import { render } from "./js/render-functions.js";
 
-
 export const lightbox = new SimpleLightbox('.gallery-link', {
     captionsData: "alt",
     captionDelay: 250,

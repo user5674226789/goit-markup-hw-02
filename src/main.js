@@ -70,15 +70,6 @@ async function onLoadMoreClick() {
   hideLoader();
   checkBtnStatus();
 }
-
-function renderImages(images) {
-  images.forEach(image => {
-    const imgElement = document.createElement('img');
-    imgElement.src = image.url;
-    refs.imagesContainer.appendChild(imgElement);
-  });
-}
-
 refs.btnShowMore.addEventListener('click', onLoadMoreClick); 
 
 async function fetchImages(query, page) {

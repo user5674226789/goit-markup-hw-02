@@ -1,44 +1,33 @@
-export function renderImages(imagesArr) {
-  return imagesArr
-    .map(
-      ({
-        webformatURL,
-        largeImageURL,
-        tags,
-        likes,
-        views,
-        comments,
-        downloads,
-      }) => {
-        return `<li class="list-item">
-     <a class="gallery-link" href ="${largeImageURL}">
-     <img src="${webformatURL}" alt="${tags}" class="gallery-image"
-     </a>
-     
-      <ul class="information-list">
-        <li class="item-information-container">
-          <h2 class="main-info">Likes </h2>
-            <p class="info">${likes}</p>
-          
-        </li>
-        <li class="item-information-container">
-          <h2 class="main-info"> Views</h2>
-            <p class="info">${views}</p>
-          
-        </li>
-        <li class="item-information-container">
-          <h2 class="main-info">Comments </h2>
-            <p class="info">${comments}</p>
-          
-        </li>
-        <li class="item-information-container">
-          <h2 class="main-info">Downloads </h2>
-            <p class="info">${downloads}</p>
-        </li>
-      </ul>
-   
-    </li>`;
-      }
-    )
-    .join('');
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
+import { refs, lightbox, displayMessage } from '../main';
+
+
+export function render(data) {
+    if (data.hits.length === 0) {
+        displayMessage(
+        'Sorry, there are no images matching your search query. Please try again!'
+        );
+    } else {
+        const images = data.hits;
+
+        const markup = images.map(image => 
+            `<li class="gallery-item">
+                <a class="gallery-link" href="${image.largeImageURL}">
+                <img loading="lazy" class="gallery-image" src="${image.webformatURL}" alt="${image.tags}" />
+                </a>
+                <div class="stats">
+                    <p class="text">Likes<br/>${image.likes}</p>
+                    <p class="text">Views<br/>${image.views}</p>
+                    <p class="text">Comments<br/>${image.comments}</p>
+                    <p class="text">Downloads<br/>${image.downloads}</p>
+                </div>
+            </li>`).join('');
+
+    refs.gallery.insertAdjacentHTML('beforeend', markup);
+    lightbox.refresh();
+    }
 }

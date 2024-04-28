@@ -71,13 +71,6 @@ async function onLoadMoreClick() {
   checkBtnStatus();
 }
 
-async function fetchImages(query, page) {
-  const url = `https://pixabay.com/api/?key=YOUR_API_KEY&q=${query}&page=${page}&per_page=${pageSize}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
-}
-
 function checkValidity(query, hits) {
   if (!query.trim()) {
     iziToast.show({

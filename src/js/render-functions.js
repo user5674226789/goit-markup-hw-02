@@ -1,44 +1,45 @@
-export function renderImages(imagesArr) {
-    return imagesArr
-      .map(
-        ({
-          webformatURL,
-          largeImageURL,
-          tags,
-          likes,
-          views,
-          comments,
-          downloads,
-        }) => {
-          return `<li class="list-item">
-       <a class="gallery-link" href ="${largeImageURL}">
-       <img src="${webformatURL}" alt="${tags}" class="gallery-image"
-       </a>
-       
-        <ul class="information-list">
-          <li class="item-information-container">
-            <h2 class="main-info"> Likes </h2>
-              <p class="info">${likes}</p>
-            
-          </li>
-          <li class="item-information-container">
-            <h2 class="main-info"> Views </h2>
-              <p class="info">${views}</p>
-            
-          </li>
-          <li class="item-information-container">
-            <h2 class="main-info"> Comments </h2>
-              <p class="info">${comments}</p>
-            
-          </li>
-          <li class="item-information-container">
-            <h2 class="main-info"> Downloads </h2>
-              <p class="info">${downloads}</p>
-          </li>
-        </ul>
-     
-      </li>`;
-        }
-      )
-      .join('');
-  }
+import { gallery } from '../main';
+
+export function renderGallery(data) {
+  const createMarkup = data.hits
+    .map(hit => {
+      const {
+        id,
+        webformatURL,
+        largeImageURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      } = hit;
+      return `
+    <li class="gallery-item">
+        <a class="gallery-link" href="${largeImageURL}">
+          <img class="gallery-image" id=${id} src="${webformatURL}" alt="${tags}"/>
+        </a>
+        <div class="gallery-item-info">
+          <div class="item-info-atr">
+          <h3>Likes</h3>
+          <p>${likes}</p>
+          </div>
+          <div class="item-info-atr">
+          <h3>Views</h3>
+          <p>${views}</p>
+          </div>
+          <div class="item-info-atr">
+          <h3>Comments</h3>
+          <p>${comments}</p>
+          </div>
+          <div class="item-info-atr">
+          <h3>Downloads</h3>
+          <p>${downloads}</p>
+          </div>
+        </div>
+    </li>
+    `;
+    })
+    .join('');
+
+  gallery.insertAdjacentHTML('beforeend', createMarkup);
+}

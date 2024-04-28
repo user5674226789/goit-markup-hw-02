@@ -109,11 +109,11 @@ function hideLoader() {
 }
 
 function showLoadMoreBtn() {
-  refs.load.style.display = 'block';
+  refs.load.style.display = ('block');
 }
 
 function hideLoadMoreBtn() {
-  refs.load.style.display = 'none';
+  refs.load.style.display = ('none');
 }
 
 function endList() {

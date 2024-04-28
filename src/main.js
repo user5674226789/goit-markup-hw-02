@@ -11,7 +11,7 @@ const loadMoreBtn = document.querySelector('#load-more-btn');
 const elemLoader = document.querySelector('#loader');
 let searchQueryResult;
 let totalPage;
-let currentPage;
+let currentPage = 1;
 const maxPage = 15;
 let data;
 
@@ -25,47 +25,45 @@ searchForm.addEventListener('submit', async event => {
   event.preventDefault();
   gallery.innerHTML = '';
   currentPage = 1;
-  searchQueryResult = event.target.elements.query.value;
-  if (searchQueryResult.trim() == '') {
+  searchQueryResult = event.target.elements.query.value.trim();
+  if (searchQueryResult === '') {
     iziToast.warning({
       message: `The search field is empty. Please try again!`,
       position: 'topRight',
     });
     searchForm.reset();
     return;
-  } else {
-    try {
-      showElemLoader();
-      data = await fetchImages(searchQueryResult, currentPage);
-      totalPage = Math.ceil(data.totalHits / maxPage);
-      if (!data.hits.length) {
-        hideElemLoader();
-        iziToast.error({
-          message:
-            'Sorry, there are no images matching your search query. Please try again.',
-          position: 'topRight',
-        });
-        checkBtnStatus();
-      } else {
-        hideElemLoader();
-        renderGallery(data);
-        lightbox.refresh();
-        checkBtnStatus();
-      }
-    } catch (error) {
+  }
+  try {
+    showElemLoader();
+    data = await fetchImages(searchQueryResult, currentPage);
+    totalPage = Math.ceil(data.totalHits / maxPage);
+    if (!data.hits.length) {
       hideElemLoader();
       iziToast.error({
-        message: `Error render gallery. Please try again!`,
+        message: 'Sorry, there are no images matching your search query. Please try again.',
         position: 'topRight',
       });
+      checkBtnStatus();
+    } else {
+      hideElemLoader();
+      renderGallery(data);
+      lightbox.refresh();
+      checkBtnStatus();
     }
-    searchForm.reset();
+  } catch (error) {
+    hideElemLoader();
+    iziToast.error({
+      message: `Error rendering gallery. Please try again!`,
+      position: 'topRight',
+    });
   }
+  searchForm.reset();
 });
 
 loadMoreBtn.addEventListener('click', onLoadMoreBtn);
 async function onLoadMoreBtn() {
-  currentPage += 1;
+  currentPage++;
   showElemLoader();
   try {
     data = await fetchImages(searchQueryResult, currentPage);
@@ -74,7 +72,7 @@ async function onLoadMoreBtn() {
   } catch (error) {
     iziToast.error({
       position: 'topRight',
-      message: 'Error next render gallery',
+      message: 'Error rendering next gallery images',
     });
   }
   hideElemLoader();

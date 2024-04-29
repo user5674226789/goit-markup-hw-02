@@ -21,3 +21,4 @@ export async function getImages() {
     const response = await myAxios.get("", { params })
     return response.data;
 };
+

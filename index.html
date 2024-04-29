@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HW_12</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <script type="module" crossorigin src="/goit-markup-hw-12/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-markup-hw-12/assets/vendor-09d7c26e.js">
-  <link rel="stylesheet" href="/goit-markup-hw-12/assets/vendor-1cd1f9d9.css">
-  <link rel="stylesheet" href="/goit-markup-hw-12/assets/index-cce8c05c.css">
-</head>
-
-<body>
-  <form class="search-form js-search-form">
-    <div class="form-group">
-      <label for="searchQuery"></label>
-      <input type="text" name="query" class="form-control" id="searchQuery" placeholder="Search images..."
-        autocomplete="off" />
-    </div>
-    <button type="submit" class="submit-btn">Search</button>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-markup-hw-12/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <script type="module" crossorigin src="/goit-markup-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-markup-hw-12/assets/vendor-09d7c26e.js">
+    <link rel="stylesheet" href="/goit-markup-hw-12/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-markup-hw-12/assets/index-41bf7dc6.css">
+  </head>
+  <body>
+    <form class="form">
+      <input type="text" name="query" id="searchInput" placeholder="Search images...">
+      <button type="submit">Search</button>
   </form>
-
-  <div class="gallery-container">
-    <ul class="images js-images-container"></ul>
+  <span class="loader"></span>
+  <div class="container">
+      <ul class="gallery"></ul>
   </div>
-  <span class="loader hidden" role="status" aria-hidden="true"></span>
-  <button class="btn-show-more js-waiting-text hidden" aria-hidden="true">Load more images</button>
+  <button type="button" class="load-more-button">Load more</button>
   
-
-</body>
-
+  
+  </body>
 </html>
